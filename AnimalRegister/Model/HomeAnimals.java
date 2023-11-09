@@ -2,6 +2,7 @@ package AnimalRegister.Model;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class HomeAnimals<P> {
@@ -69,5 +70,13 @@ public class HomeAnimals<P> {
         homeAnimals.add(newHamster);
         return newHamster;
     }
-
+    public List<String> showCommands(String name){
+        List<String> searched = new ArrayList<>();
+        for (Pet pet:homeAnimals) {
+            if (pet.getName().equals(name)){
+                searched.add(String.valueOf(pet.getCommands()));
+            }
+        }
+        return Collections.singletonList(searched.toString());
+    }
 }

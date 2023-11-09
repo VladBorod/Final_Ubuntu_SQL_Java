@@ -26,4 +26,7 @@ public class Presenter {
     public void addHamster(String unparsedData){
         view.print(String.valueOf(service.addHamster(unparsedData)));
     }
+    public void showCommands(String name){
+        view.print(service.showCommands(name).toString().replaceAll("[ \\[ \\] ]", ""));
+    }
 }

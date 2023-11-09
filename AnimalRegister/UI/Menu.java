@@ -15,6 +15,7 @@ public class Menu {
         list.add(new CatAdd(console));
         list.add(new DogAdd(console));
         list.add(new HamsterAdd(console));
+        list.add(new ShowCommands(console));
         list.add(new Finish(console));
     }
 

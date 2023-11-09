@@ -24,4 +24,7 @@ public class Service {
     public Hamster addHamster(String unparsedData){
         return homeAnimals.addHamster(unparsedData);
     }
+    public List<String> showCommands(String name){
+        return homeAnimals.showCommands(name);
+    }
 }
